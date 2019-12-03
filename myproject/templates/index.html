@@ -74,10 +74,19 @@
   					-
   				</button>
   			</span>&nbsp;&nbsp;
-
+          <script>
+            var y = $(amount.x).val;
+          function addOne(){
+            y=y+1;
+            console.log($(amount.x).val);
+          }
+          
+          </script>
+          
+            
   			<input type="text" name="cups" class="form-control input-number " value={{amount.x}}  min="1" max="100"><br>
   			<span class="input-group-btn">
-  				&nbsp;&nbsp; <button type="button" class="btn-info btn-lg" style='background-color:#00CED1;' data-type="plus" data-field="quant[2]">
+  				&nbsp;&nbsp; <button class="btn-info btn-lg" style='background-color:#00CED1;' data-type="plus" data-field="quant[2]" onclick= "addOne()">
   					+
   					<span class="glyphicon glyphicon-plus"></span>
   				</button>
@@ -93,18 +102,15 @@
 
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0 " src="/static/img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-          </div>
-        </div>
-      </div>
+  <p style="text-align: center;">This part of the website is to see how much food is really left for your pet to eat. It uses ultra sonic sensors to gauge the distance it's away. Based on the data, you can tell how much is left.
+      </p>
+        <div style ="border: 2px solid red; width: 300px; display: contents;">
+            <input type="text" name="lname" style = "margin-left: 475px" value = {{amount.y}}  disabled>       
+           </div>
+           <br><br>
 
- 
+          </div>
+
   <!-- Contact Section -->
   <section id = "contact"class="contact-section "style='background-color:#00CED1;'>
     <div class="container">
